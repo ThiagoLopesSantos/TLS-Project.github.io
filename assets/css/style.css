@@ -58,7 +58,7 @@ body {
 }
 .conteudo-principal {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 .conteudo-principal-texto {
