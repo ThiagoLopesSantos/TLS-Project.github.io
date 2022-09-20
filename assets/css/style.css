@@ -22,6 +22,7 @@ body {
 }
 /*RESET E PADRONIZAÇÃO*/
 
+/*TOPO DO SITE*/
 .top {
     display: flex;
     justify-content: center;
@@ -40,18 +41,20 @@ body {
 .top-menu--item:hover{
     color: #B28756;
 }
+/*TOPO DO SITE FIM*/
+
+/*MAIN*/
 .conteudo {
     display: flex;
     flex-direction: column;
-    width: 1330px;
+    width: 100vw;
     height: calc(100vh - 120px);
 }
 .conteudo-line{
     height: 0;
     width: 600px;
     border-top: 1px solid #F2DB92;
-    margin-left: calc(50% - 600px/2);
-
+    align-self: center;
 }
 .conteudo-principal {
     display: flex;
@@ -74,6 +77,34 @@ body {
     height: 80vh;
     padding-top: 30px;
 }
+/*MAIN FIM*/
+
+/*SOBRE*/
+#sobreMim {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start; 
+}
+.text-area {
+    display: none;
+    color: #999;
+}
+.textSbm {
+    padding-left: 30px;
+    text-align: justify;
+    font-size: 18.8px;
+    line-height: 35px;
+}
+.textSbm a {
+    color: #B28756;
+}
+.textSbm a:hover {
+    color: #f2db92;
+}
+/*SOBRE FIM*/
+
+/*RODAPE*/
 .rodape {
     display: flex;
     justify-content: center;
@@ -90,3 +121,4 @@ body {
     text-align: center;
     color: #E1C45D;
 }
+/*RODAPE FIM*/
