@@ -115,7 +115,7 @@ body {
     width: 1300px;
     padding-bottom: 20px;
     border-top: 1px solid #F2DB92;
-    margin-left: calc(50% - 1300px/2);
+    align-self: center;
 }
 .rodape-copyright {
     text-align: center;
