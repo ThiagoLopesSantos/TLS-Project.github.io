@@ -9,51 +9,73 @@
     <title>Thiago Lopes - Portifolio</title>
 </head>
 <body>
-    <header class="top">
-        <nav class="top-menu">
-            <a onclick="menuHome(this)" class="top-menu--item" href="#">Home</a>
-            <a onclick="menuSobre(this)" class="top-menu--item" href="#">Sobre</a>
-            <a class="top-menu--item" href="#">Ideias & Projetos</a>
-            <a class="top-menu--item" href="#">Contato</a>
-        </nav>
-    </header>
+    <!--FIRST CONTENT-->
+    <div class="first-conteiner">
+        <section class="first-conteiner--icons">
+            <a class="linkedin-icon" href="#"></a>
+            <a class="behance-icon" href="#"></a>
+        </section>
+        <section class="first-conteiner--title">
+            <nav>
+                <ul>
+                    <li class="first-conteiner--title-link"><a class="gradient1" href="#sobre">Olá,</a></li>
+                    <li class="first-conteiner--title-link"><a class="gradient1" href="#portifolio">Sou</a></li>
+                    <li class="first-conteiner--title-link"><a class="gradient1" href="#footer">Thiago Lopes.</a></li>
+                </ul>
+            </nav>
+        </section>
+    </div>
 
-    <main class="conteudo">
-        <section class="conteudo-line"></section>
-        <section class="conteudo-principal">
-            <!--CONTEUDO HOME-->
-            <div class="conteudo-principal-texto" id="home">
-                <p class="conteudo-principal-titulo gradient1">Bem Vindos!</p>
-                <p class="conteudo-principal-titulo gradient1">Sou Desenvolvedor web.</p>
-                <p class="conteudo-principal-titulo gradient1">E me chamo Thiago Lopes.</p>                
+    <!--SECOND CONTENT-->
+    <div class="second-conteiner">
+        <p class="second-conteiner--title gradient1" id="sobre">Sobre mim</p>
+        <section class="second-conteiner--text-area">
+            
+            <p>
+                <span class="gradient1">- Aqui vai um pouco sobre minha caminhada para o mundo do desenvolvimento.</span> <br>
+                Meu primeiro contato com desenvolvimento web começou em 2013 com o curso de Técnico em Informática voltado a programação no Senac, 
+                onde no geral tivemos outras aulas na grade curricular além de programação, porém as principais foram C, C++, HTML, CSS, PHP e MySQL. 
+                Hoje faço Faculdade de Análise e Desenvolvimento de Sistemas na Estácio.
+                Fiz também curso de Desenvolvimento Web, na <a href="https://b7web.com.br/fullstack/">B7Web</a> do professor Boniek Lacerda onde ele traz especialidade em várias tecnologias.
+                Consegui obter os certificados de HTML5, CSS3 e JAVASCRIPT e no curso pude criar junto as aulas alguns projetos.
+                Hoje estou em busca de transição de carreira e quero entrar de vez no ramo de desenvolvimento, inicialmente com foco em Front-End, 
+                mas sempre em busca de melhorias e mais aprofundamento buscando a fluência nas tecnologias e futuramente ser um Desenvolvedor FullStack.
+            </p>
+            
+        </section>
+    </div>
+
+    <!--THIRD CONTENT-->
+    <div class="third-conteiner">
+        <p class="third-conteiner--title gradient1" id="portifolio">Portifólio</p>
+        <section class="third-conteiner--slide-area">
+            
+        </section>
+    </div>
+
+    <!--ICONS AREA-->
+    <div class="icons-area">
+        <div class="line line-left"></div>
+            <a class="linkedin-icon" href="#"></a>
+            <a class="behance-icon" href="#"></a>
+        <div class="line line-right"></div>
+    </div>
+
+    <!--FOOTER CONTENT-->
+    <footer class="footer-conteiner " id="footer">
+        <div class="contato-conteiner">
+            <div class="contato-conteiner--top"><p>CONTATO</p></div>
+            <div class="contato-conteiner--main">                               
+                <a class="email-button" href="mailto:thiagolopes.dev@gmail.com">
+                    <button class="button">E-mail</button>
+                </a>                             
             </div>
-            <!--CONTEUDO SOBRE-->
-            <div class="conteudo-principal-texto" id="sobreMim">
-                <p class="conteudo-principal-titulo gradient1">Sobre mim:</p>
-                <section class="text-area" id="sobreTxt">
-                    <div class="textSbm">
-                        <p><span class="gradient1">- Aqui vai um pouco sobre minha caminhada para o mundo do desenvolvimento.</span> <br>
-                            Meu primeiro contato com desenvolvimento web começou em 2013 com o curso de Técnico em Informática voltado a programação no Senac, 
-                            onde no geral tivemos outras aulas na grade curricular além de programação, porém as principais foram C, C++, HTML, CSS, PHP e MySQL. 
-                            Hoje faço Faculdade de Análise e Desenvolvimento de Sistemas na Estácio.
-                            Fiz também curso de Desenvolvimento Web, na <a href="https://b7web.com.br/fullstack/">B7Web</a> do professor Boniek Lacerda onde ele traz especialidade em várias tecnologias.
-                            Consegui obter os certificados de HTML5, CSS3 e JAVASCRIPT e no curso pude criar junto as aulas alguns projetos.
-
-                            Hoje estou em busca de transição de carreira e quero entrar de vez no ramo de desenvolvimento, inicialmente com foco em Front-End, 
-                            mas sempre em busca de melhorias e mais aprofundamento buscando a fluência nas tecnologias e futuramente ser um Desenvolvedor FullStack.
-                        </p>
-                    </div>
-                </section>
-            </div>
-            <!--CONTEUDO IMAGEM-->
-            <img id="sbImage" class="conteudo-principal-imagem" src="assets/images/02.png" alt="Imagem de apresentação">
-        </section>   
-    </main>
-
-    <footer class="rodape">
-        <div class="rodape-line"></div>
-        <p class="rodape-copyright">Copyright - by: Thiago Lopes. ©</p>
+        </div>
+        <div class="footer-conteiner--bottom">
+            © Thiago Lopes
+        </div>
     </footer>
+    
 
     <script src="assets/js/script.js"></script>
 </body>
