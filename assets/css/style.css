@@ -36,8 +36,8 @@ body {
 .first-conteiner--icons {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
     gap: 20px;
 }
 .linkedin-icon {
@@ -61,8 +61,6 @@ body {
     border: 1px solid #CCC;
     border-radius: 7px;
 }
-
-/*Titulo*/
 .first-conteiner--title {
     display: flex;
     align-items: center;
@@ -82,20 +80,20 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background: linear-gradient(132deg, #000000 1.58%, #242222 250%);
+    background: linear-gradient(28deg, #000000 1.58%, #555 250%);
 }
 .second-conteiner--title{
     display: flex;
     justify-content: center;
     padding-top: 20px;
-    font-size: 90px;
+    font-size: 70px;
     margin-right: 60%;
     font-weight: bold;
 }
 .second-conteiner--text-area {
     display: flex;
     text-align: justify;
-    padding: 40px;
+    padding: 50px 90px;
     font-size: 20px;
     line-height: 50px;
     color: #FFFFFF;
@@ -111,40 +109,109 @@ body {
 .third-conteiner {
     display: flex;
     overflow: hidden;
-    align-items: center;
     flex-direction: column;
     height: 100vh;
 }
-.third-conteiner--title{
+.third-conteiner--title {
     display: flex;
     justify-content: center;
     padding-top: 20px;
-    font-size: 90px;
-    margin-right: 60%;
+    font-size: 30px;
+    margin-left: -12%;
     font-weight: bold;
 }
-.third-conteiner--slide-area {
-    height: calc(100vh - 82px);
+.slider{
+    flex: 1;
+    overflow: hidden;
 }
+.slider--width{
+    height: 100vh;
+    display: flex;
+    transition: all ease 3s;
+}
+.slider--item{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    border-radius: 20px;
+    gap: 1px;
+    box-shadow: 1px 1px 5px #000;
+}
+.slide-title {
+    flex: 1;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    background-color: #B68710;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: justify;
+}
+.slide-title h1 {
+    padding-top: 20px;
+}
+.slide-title p {
+    padding: 50px;
+}
+.slide-image {
+    flex: 1;
+    height: 100%;
+    cursor: pointer;
+}
+.slide-image img {
+    border-radius: 0px 20px 20px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.control-left, .control-right {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    opacity: 0.1;
+    transition: all ease-in-out 1s;
+    border: 0;
+    cursor: pointer;
+    height: 50vh;
+}
+.control-left {
+    left: 0;
+    border-radius: 0 50px 50px 0;
+}
+.control-left:hover, .control-right:hover {
+   opacity: 1;
+   transition: all ease-in-out 0.5s;
+   
+}
+.control-right {
+    right: 0;
+    border-radius: 50px 0 0 50px;
+}
+.control-left-img, .control-right-img {
+    width: 25px;
+}
+
+
+/*ICONS AREA*/
 .icons-area {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-}
-.line {
-    width: 400px;
-    height: 0;
-    border-bottom: 2px solid #FFF;
+    height: 100px;
+    gap: 30px;
 }
 .line-right {
-    width: 400px;
+    width: 600px;
     border: 1px solid transparent;
     border-image: linear-gradient(to right, #FFF, #000);
     border-image-slice: 1;
 }
 .line-left {
-    width: 400px;
+    width: 600px;
     border: 1px solid transparent;
     border-image: linear-gradient(to left, #FFF, #000);
     border-image-slice: 1;
@@ -160,43 +227,47 @@ body {
     overflow: hidden;
 }
 .contato-conteiner {
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    width: 1089px;
-    height: 413px;
-    border: 1px solid #CCC;
-    background: #0F0F0F;
-    border: 1px solid #FFFFFF;
-    box-shadow: 0px 4px 25px #000000, inset 0px 4px 25px rgba(255, 255, 255, 0.25);
+    width: 600px;
+    height: 250px;
+    border: 1px solid #777;
+    border-radius: 10px;
+    box-shadow: 0px 4px 25px #000000, inset 0px 4px 25px rgb(255 255 255 / 53%);
 }
 .contato-conteiner--top {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1089px;
-    height: 72px;
+    border-radius: 10px 10px 0px 0px;
+    height: 30px;
     background: radial-gradient(91.75% 132.31% at 107.07% 50%, #FFFFFF 0%, #FFC700 47.36%, #B68710 100%)
 }
 .contato-conteiner--top p {
-    font-size: 30px;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+    text-shadow: 0px 1px 2px #333;
 }
 .contato-conteiner--main {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    height: calc(100% - 72px);
+    flex-direction: column;
+    gap: 20px;
+    height: calc(100% - 52px);
 }
 .button {
-    padding: 30px 100px; 
-    transition: all ease 1s;
-    font-size: 20px;
-    font-family: 'Hammersmith One', sans-serif;
+    display: flex;
+    padding: 10px; 
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    background: linear-gradient(358deg, #FFF, #333);
 }
 .button:hover {
-    padding: 35px 105px;
-    transition: all ease 1s;
-    box-shadow: 3px 3px 20px #000;
+    box-shadow: 0px 3px 10px #555;
+    padding: 25x 35px; 
     cursor: pointer;
 }
 .footer-conteiner--bottom {
