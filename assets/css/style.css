@@ -7,6 +7,7 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Hammersmith One', sans-serif;
+    scroll-behavior:smooth;
 }
 body {
     background-color: #000;
@@ -122,15 +123,17 @@ body {
 }
 .slider{
     flex: 1;
+    margin-top: 20px;
     overflow: hidden;
 }
 .slider--width{
     height: 100vh;
     display: flex;
+    gap: 15px;
     transition: all ease 3s;
 }
 .slider--item{
-    width: 100vw;
+    width: 70vw;
     height: 50vh;
     display: flex;
     justify-content: center;
