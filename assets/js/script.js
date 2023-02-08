@@ -13,7 +13,7 @@ function goPrev() {
     console.log(currentSlide);
     updateMargin();
 }
-//FUNÇÃO PARA O  BOTÃO DE CLIQUE PROXIMO
+//FUNÇÃO PARA O BOTÃO DE CLIQUE PROXIMO
 function goNext() {
     currentSlide--;
     if(currentSlide > 0) {
@@ -27,7 +27,7 @@ function goNext() {
     
 //ATUALIZA O STATUS DO SLIDE
 function updateMargin() {
-    let sliderItemWidth = document.querySelector('.slider--item').clientWidth; // fazendo o slide ocupara tela corretamente mesmo com a barra de rolagem
+    let sliderItemWidth = document.querySelector('.slider--item').clientWidth; // fazendo o slide ocupar a tela corretamente mesmo com a barra de rolagem
 
     let newMargin = (currentSlide * sliderItemWidth);
     document.querySelector('.slider--width').style.marginLeft = 
@@ -35,3 +35,23 @@ function updateMargin() {
 }
 
 //setInterval(goNext, 8000); // automatiza a passagem de slides 
+
+
+// BOTÃO DE RETORNO AO TOPO
+const btn = document.getElementById("return-button");
+
+btn.addEventListener("click", function(){
+    window.scrollTo(0,0);
+});
+
+document.addEventListener('scroll',ocultarBotao);
+
+function ocultarBotao() { 
+    if(window.scrollY > 600){
+        btn.style.display = "flex";
+    }else {
+        btn.style.display = "none";
+    }
+}
+
+ocultarBotao();
