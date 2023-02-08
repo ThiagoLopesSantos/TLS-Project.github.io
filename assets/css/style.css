@@ -15,15 +15,44 @@ body {
     flex-direction: column;
     font-size: 100%;
 }
+
+/*EFEITO GRADIENTE*/
 .gradient1{
     width: 40%;
     background: radial-gradient(54.9% 79.41% at 70.22% 64.04%, #FFFFFF 0%, #FFC700 47.36%, #B68710 100%);   
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
-}/*
-/*RESET E PADRONIZAÇÃO*/
+}
+/* BOTÃO DE RETORNO*/
+#return-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    position: fixed;
+    background-color: rgb(245, 199, 82, .5);
+    bottom: 15px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+.btn {
+    border: solid 1px #000;
+    border-width: 0 7px 7px 0;
+    padding: 5px;
+    display: inline-block;
+    
+}
+.up{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+/*RESET E PADRONIZAÇÃO FIM*/
 
 /*First Content*/
 .first-conteiner {
@@ -48,19 +77,20 @@ body {
     height: 50px;
     width: 50px;
 }
-.behance-icon {
-    background-image: url('../images/behance.png');
+.github-icon {
+    background-image: url('../images/github.png');
     background-repeat: no-repeat;
     background-size: contain;
     height: 46px;
     width: 48px;
 }
 .linkedin-icon:hover,
-.behance-icon:hover {
+.github-icon:hover {
     opacity: 0.2px;   
     background-color: #d4bb2c;
     border: 1px solid #CCC;
     border-radius: 7px;
+    transition: 200ms all ease-in-out;
 }
 .first-conteiner--title {
     display: flex;
@@ -72,6 +102,11 @@ body {
     font-size: 90px;
     padding: 5px;
     font-weight: bold;
+}
+.first-conteiner--title-link a:hover {
+    font-size: 100px;
+    margin: 20px auto;
+    transition: 200ms linear;
 }
 
 /*Second conteiner*/
@@ -123,7 +158,7 @@ body {
 }
 .slider{
     flex: 1;
-    margin-top: 20px;
+    margin-top: 50px;
     overflow: hidden;
 }
 .slider--width{
@@ -133,8 +168,8 @@ body {
     transition: all ease 3s;
 }
 .slider--item{
-    width: 70vw;
-    height: 50vh;
+    width: 90vw;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,6 +205,9 @@ body {
     width: 100%;
     height: 100%;
 }
+.slide-image img:hover {
+    border: 5px solid #d4bb2c;
+}
 
 .control-left, .control-right {
     display: flex;
@@ -179,7 +217,7 @@ body {
     transition: all ease-in-out 1s;
     border: 0;
     cursor: pointer;
-    height: 50vh;
+    height: 80vh;
 }
 .control-left {
     left: 0;
@@ -260,17 +298,23 @@ body {
     gap: 20px;
     height: calc(100% - 52px);
 }
+.contato-conteiner--main a{
+    gap: 10px;
+
+}
 .button {
     display: flex;
-    padding: 10px; 
+    padding: 10px;
     font-size: 18px;
-    font-weight: bold;
-    color: #000;
-    background: linear-gradient(358deg, #FFF, #333);
+    color: #CCC;
+    box-shadow: 0px 1px 0px #555;
+
 }
 .button:hover {
-    box-shadow: 0px 3px 10px #555;
-    padding: 25x 35px; 
+    box-shadow: 0px 3px 0px #555;
+    color: #d4bb2c;
+    font-size: 20px;
+    transition: 100ms all ease-in-out ;
     cursor: pointer;
 }
 .footer-conteiner--bottom {
@@ -283,3 +327,79 @@ body {
     background-color: #AAA;
 }
 
+/* RESPONSIVIDADE */
+
+@media (max-width: 375px) {
+    .gradient1{
+        width: 40%;
+        background:  #B68710 ;   
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    /*First Conteiner*/
+    .first-conteiner {
+        display: block;
+        background-size: 310%;
+    }
+    .first-conteiner--icons {
+        flex-direction: row;
+        margin-top: 15px;
+        margin-left: 270px;
+        gap: 10px;
+    }
+    .ft-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .first-conteiner--title {
+        padding-left: 0;
+    }
+    .first-conteiner--title-link {
+        font-size: 60px;
+        padding: 5px;
+    }
+
+    
+    .first-conteiner--title-link a:hover{
+        font-size: 80px;
+        margin: 20px auto;
+        transition: 300ms linear;
+    }
+    
+    /*Second Conteiner*/
+    .content-title {
+        width: 100vw;
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .second-conteiner--text-area {
+        padding: 10px 10px;
+        font-size: 10px;
+        line-height: 25px;
+    }
+
+    /* Third Content */
+
+    .slider--item {
+        width: 100vw;
+        height: 50vh;
+        display: block;
+    }
+    .slide-title {
+        height: 30vh;
+        border-radius: 20px 20px 0px 0px;
+        text-align: center;
+    }
+    .slide-title h1 {
+        padding-top: 10px;
+    }
+    .slide-title p {
+        padding: 6px;
+    }
+    .slide-image img {
+        border-radius: 0px 0px 20px 20px;
+    }
+}

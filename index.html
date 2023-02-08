@@ -11,17 +11,17 @@
 </head>
 <body>
     <!--FIRST CONTENT-->
-    <div class="first-conteiner">
+    <div class="first-conteiner" id="Home">
         <section class="first-conteiner--icons">
-            <a class="linkedin-icon" href="https://www.linkedin.com/in/thiago-lopes-a353b6207"></a>
-            <a class="behance-icon" href="#"></a>
+            <a class="linkedin-icon ft-icon" href="https://www.linkedin.com/in/thiago-lopes-a353b6207" target="_blank"></a>
+            <a class="github-icon ft-icon" href="https://github.com/ThiagoLopesSantos" target="_blank"></a>
         </section>
         <section class="first-conteiner--title">
             <nav>
                 <ul>
-                    <li class="first-conteiner--title-link"><a class="gradient1" href="#sobre">Olá,</a></li>
-                    <li class="first-conteiner--title-link"><a class="gradient1" href="#portifolio">Sou</a></li>
-                    <li class="first-conteiner--title-link"><a class="gradient1" href="#footer">Thiago Lopes.</a></li>
+                    <li class="first-conteiner--title-link"><a class="gradient1" title="APRESENTAÇÃO" href="#sobre">Olá,</a></li>
+                    <li class="first-conteiner--title-link"><a class="gradient1" title="PROJETOS" href="#portifolio">Sou</a></li>
+                    <li class="first-conteiner--title-link"><a class="gradient1" title="CONTATO" href="#footer">Thiago Lopes.</a></li>
                 </ul>
             </nav>
         </section>
@@ -29,7 +29,7 @@
 
     <!--SECOND CONTENT-->
     <div class="second-conteiner">
-        <p class="second-conteiner--title gradient1" id="sobre">Sobre mim</p>
+        <p class="second-conteiner--title content-title gradient1" id="sobre">Sobre mim</p>
         <section class="second-conteiner--text-area">
             
             <p>
@@ -48,7 +48,7 @@
 
     <!--THIRD CONTENT-->
     <div class="third-conteiner">
-        <p class="third-conteiner--title gradient1" id="portifolio">Portfólio</p>
+        <p class="third-conteiner--title content-title gradient1" id="portifolio">Portfólio</p>
             
         <div class="slider">          
             <div class="slider--width">
@@ -62,7 +62,7 @@
                     </section>
                     <section class="slide-image">
                         <a href="https://thiagolopessantos.github.io/StarBucksProject.github.io/" target="_blank">
-                            <img src="assets/images/starBucksProject.JPG" alt="starBucksProject"> 
+                            <img src="assets/images/starBucksProject.JPG" title="IR PARA O SITE" alt="starBucksProject"> 
                         </a>
                     </section>
                 </div>
@@ -75,7 +75,7 @@
                     </section>
                     <section class="slide-image">
                         <a href="https://thiagolopessantos.github.io/PaginaDeTributo.github.io/" target="_blank">
-                            <img src="assets/images/tributePage.JPG" alt="TributePage"> 
+                            <img src="assets/images/tributePage.JPG" title="IR PARA O SITE" alt="TributePage"> 
                         </a>
                     </section>
                 </div>
@@ -88,7 +88,7 @@
                     </section>
                     <section class="slide-image">
                         <a href="https://thiagolopessantos.github.io/CopiaDoGoogle.github/" target="_blank">
-                            <img src="assets/images/googleReplic.JPG" alt="GoogleReplic"> 
+                            <img src="assets/images/googleReplic.JPG" title="IR PARA O SITE" alt="GoogleReplic"> 
                         </a>
                     </section>
                 </div>
@@ -101,7 +101,7 @@
                     </section>
                     <section class="slide-image">
                         <a href="https://thiagolopessantos.github.io/netflix_replic.github.io/" target="_blank">
-                            <img src="assets/images/netflixReplic.JPG" alt="NetFlixReplic"> 
+                            <img src="assets/images/netflixReplic.JPG" title="IR PARA O SITE" alt="NetFlixReplic"> 
                         </a>
                     </section>
                 </div>
@@ -118,17 +118,23 @@
         <!--ICONS AREA-->
         <div class="icons-area">
             <div class="line line-left"></div>
-                <a class="linkedin-icon" href="https://www.linkedin.com/in/thiago-lopes-a353b6207"></a>
-                <a class="behance-icon" href="#"></a>
+                <a class="linkedin-icon" href="https://www.linkedin.com/in/thiago-lopes-a353b6207" target="_blank"></a>
+                <a class="github-icon" href="https://github.com/ThiagoLopesSantos" target="_blank"></a>
             <div class="line line-right"></div>
         </div>
 
         <div class="contato-conteiner">
             <div class="contato-conteiner--top"><p>CONTATO</p></div>
             <div class="contato-conteiner--main">                               
-                <a class="button" href="mailto:thiagolopes.dev@gmail.com">Email</a>                             
-                <a class="button" href="https://wa.me/qr/PRVLB7AF5HEPB1">WhatsApp</a>                             
+                <a class="button" href="mailto:thiagodev8343@gmail.com"> <img src="assets/images/email-icon.png"> Email</a>                             
+                <a class="button" href=" https://wa.me/+5521979095061"> 
+                    <img src="assets/images/wtappIcon.png">
+                    WhatsApp
+                </a>                             
             </div>
+        </div>
+        <div id="return-button">
+            <i class="btn up"href="#Home" title="inicio"></i>
         </div>
         <div class="footer-conteiner--bottom">
             © Thiago Lopes
