@@ -1,4 +1,6 @@
-let totalSlides = document.querySelectorAll('.slider--item').length; //selecionando a quantidade total de slides
+
+/*let totalSlides = document.querySelectorAll('.slider--item').length; //selecionando a quantidade total de slides
+
 let currentSlide = 0;
 
 document.querySelector('.slider--width').style.width = 
@@ -35,6 +37,30 @@ function updateMargin() {
 }
 
 //setInterval(goNext, 8000); // automatiza a passagem de slides 
+
+*/
+
+
+
+
+
+let count = 1;
+document.getElementById("radio1").checked = true;
+
+setInterval( function(){
+    nextImage();
+}, 15000);
+
+function nextImage(){
+    count++;
+    if(count>4){
+        count = 1;
+    }
+
+    document.getElementById("radio"+count).checked = true;
+}
+
+
 
 
 // BOTÃO DE RETORNO AO TOPO
