@@ -234,6 +234,9 @@ body {
 #radio4:checked ~.first {
     margin-left: -75%;
 }
+#radio5:checked ~.first {
+    margin-left: -100%;
+}
 
 .navigation-auto div {
     border: 2px solid #555;
@@ -266,6 +269,9 @@ body {
     background-color: #fcd600;
 }
 #radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fcd600;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
     background-color: #fcd600;
 }
 
