@@ -460,4 +460,8 @@ body {
         width: 340px;
         height: 400px;
     }
+    #return-button{
+        width: 0;
+        height: 0;
+    }
 }
