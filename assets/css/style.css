@@ -375,7 +375,6 @@ body {
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
-
     /*First Conteiner*/
     .first-conteiner {
         display: block;
@@ -420,14 +419,17 @@ body {
     }
 
     /* Third Content slides*/
-
+    .slider {
+        width: 340px;
+        height: 570px;
+    }
     .slider--item {
         width: 100vw;
         height: 50vh;
         display: block;
     }
     .slide-title {
-        height: 30vh;
+        height:12vh;
         border-radius: 20px 20px 0px 0px;
         text-align: center;
     }
@@ -437,7 +439,25 @@ body {
     .slide-title p {
         padding: 6px;
     }
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
     .slide-image img {
         border-radius: 0px 0px 20px 20px;
+    }
+    .manual-navigation {
+        width: 350px;
+        margin-top: 100px;
+    }
+    .navigation-auto {
+        width: 350px;
+        margin-top: 500px;
+    }
+    .contato-conteiner {
+        width: 340px;
+        height: 400px;
     }
 }
