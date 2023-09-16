@@ -464,4 +464,7 @@ body {
         width: 0;
         height: 0;
     }
+    .btn{
+        display: none;
+    }
 }
