@@ -367,9 +367,11 @@ body {
 
 /* RESPONSIVIDADE */
 
-@media (max-width: 375px) {
+/*celular*/
+
+@media (min-width: 320px) and (max-width: 375px){
     .gradient1{
-        width: 40%;
+        width: 50%;
         background:  #B68710 ;   
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -378,7 +380,7 @@ body {
     /*First Conteiner*/
     .first-conteiner {
         display: block;
-        background-size: 310%;
+        background-size: 300%;
     }
     .first-conteiner--icons {
         flex-direction: row;
@@ -392,17 +394,21 @@ body {
     }
     .first-conteiner--title {
         padding-left: 0;
+        margin-top: 100px;
     }
     .first-conteiner--title-link {
-        font-size: 60px;
+        font-size: 50px;
         padding: 5px;
     }
 
     
     .first-conteiner--title-link a:hover{
-        font-size: 80px;
+        font-size: 40px;
         margin: 20px auto;
         transition: 300ms linear;
+    }
+    .txt1 {
+        font-size: 50px;
     }
     
     /*Second Conteiner*/
@@ -414,13 +420,13 @@ body {
 
     .second-conteiner--text-area {
         padding: 10px 10px;
-        font-size: 10px;
+        font-size: 15px;
         line-height: 25px;
     }
 
     /* Third Content slides*/
     .slider {
-        width: 340px;
+        width: 100%;
         height: 570px;
     }
     .slider--item {
@@ -449,16 +455,121 @@ body {
         border-radius: 0px 0px 20px 20px;
     }
     .manual-navigation {
-        width: 350px;
-        margin-top: 100px;
+        width: 370px;
+        margin-top: 120px;
     }
     .navigation-auto {
-        width: 350px;
-        margin-top: 500px;
+        width: 370px;
+        margin-top: 520px;
     }
     .contato-conteiner {
         width: 340px;
         height: 400px;
+    }
+    #return-button{
+        width: 0;
+        height: 0;
+    }
+    .btn{
+        display: none;
+    }
+}
+/*tablet*/
+@media (min-width: 375px) and (max-width: 768px){
+    .gradient1{
+        width: 50%;
+        background:  #B68710 ;   
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    /*First Conteiner*/
+    .first-conteiner {
+        display: block;
+        background-size: 200%;
+    }
+    .first-conteiner--icons {
+        flex-direction: row;
+        margin-top: 15px;
+        margin-left: 90px;
+        gap: 20px;
+    }
+    .ft-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .first-conteiner--title {
+        padding-left: 0;
+        margin-top: 100px;
+    }
+    .first-conteiner--title-link {
+        font-size: 90px;
+        padding: 55px;
+    }
+
+    
+    .first-conteiner--title-link a:hover{
+        font-size: 90px;
+        margin: 20px auto;
+        transition: 300ms linear;
+    }
+    .txt1 {
+        font-size: 70px;
+    }
+    
+    /*Second Conteiner*/
+    .content-title {
+        width: 100vw;
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .second-conteiner--text-area {
+        padding: 10px 10px;
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    /* Third Content slides*/
+    .slider {
+        width: 100%;
+        height: 80vh;
+    }
+    .slides {
+        height: 100%;
+    }
+    .slide-title {
+        height:12vh;
+        font-size: 40px;
+        border-radius: 20px 20px 0px 0px;
+        text-align: center;
+    }
+    .slide-title h1 {
+        padding-top: 10px;
+    }
+    .slide-title p {
+        padding: 6px;
+    }
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .slide-image img {
+        border-radius: 0px 0px 20px 20px;
+    }
+    .manual-navigation {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .navigation-auto {
+        width: 100%;
+        margin-top: 870px;
+    }
+    .contato-conteiner {
+        width: 50%;
+        height: 50%;
     }
     #return-button{
         width: 0;
