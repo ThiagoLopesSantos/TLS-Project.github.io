@@ -18,7 +18,7 @@ body {
 
 /*EFEITO GRADIENTE*/
 .gradient1{
-    width: 40%;
+    width: 100%;
     background: radial-gradient(54.9% 79.41% at 70.22% 64.04%, #FFFFFF 0%, #FFC700 47.36%, #B68710 100%);   
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -159,7 +159,7 @@ body {
 /*AREA DOS SLIDES*/
 .slider {
     margin: 0 auto; 
-    margin-top: 10px;
+    margin-top: 80px;
     width: 1000px;
     height: 500px;
     overflow: hidden;
@@ -367,156 +367,42 @@ body {
 
 /* RESPONSIVIDADE */
 
-/*celular*/
-
-@media (min-width: 320px) and (max-width: 375px){
-    .gradient1{
-        width: 50%;
-        background:  #B68710 ;   
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
+/*tablet*/
+@media (max-width: 990px){
+    
     /*First Conteiner*/
     .first-conteiner {
         display: block;
         background-size: 300%;
-    }
+    }   
     .first-conteiner--icons {
         flex-direction: row;
         margin-top: 15px;
-        margin-left: 270px;
-        gap: 10px;
+        margin-left: 75%;
+        gap: 30px;
     }
     .ft-icon {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
     }
     .first-conteiner--title {
-        padding-left: 0;
         margin-top: 100px;
+        padding: 0;
     }
-    .first-conteiner--title-link {
-        font-size: 50px;
-        padding: 5px;
-    }
-
-    
-    .first-conteiner--title-link a:hover{
-        font-size: 40px;
-        margin: 20px auto;
-        transition: 300ms linear;
-    }
-    .txt1 {
-        font-size: 50px;
-    }
-    
-    /*Second Conteiner*/
-    .content-title {
-        width: 100vw;
-        font-size: 50px;
-        margin: 0;
-    }
-
-    .second-conteiner--text-area {
-        padding: 10px 10px;
-        font-size: 15px;
-        line-height: 25px;
-    }
-
-    /* Third Content slides*/
-    .slider {
-        width: 100%;
-        height: 570px;
-    }
-    .slider--item {
-        width: 100vw;
-        height: 50vh;
-        display: block;
-    }
-    .slide-title {
-        height:12vh;
-        border-radius: 20px 20px 0px 0px;
-        text-align: center;
-    }
-    .slide-title h1 {
-        padding-top: 10px;
-    }
-    .slide-title p {
-        padding: 6px;
-    }
-    .slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-    .slide-image img {
-        border-radius: 0px 0px 20px 20px;
-    }
-    .manual-navigation {
-        width: 370px;
-        margin-top: 120px;
-    }
-    .navigation-auto {
-        width: 370px;
-        margin-top: 520px;
-    }
-    .contato-conteiner {
-        width: 340px;
-        height: 400px;
-    }
-    #return-button{
-        width: 0;
-        height: 0;
-    }
-    .btn{
-        display: none;
-    }
-}
-/*tablet*/
-@media (min-width: 375px) and (max-width: 768px){
-    .gradient1{
-        width: 50%;
-        background:  #B68710 ;   
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
-    /*First Conteiner*/
-    .first-conteiner {
-        display: block;
-        background-size: 200%;
-    }
-    .first-conteiner--icons {
-        flex-direction: row;
-        margin-top: 15px;
-        margin-left: 90px;
-        gap: 20px;
-    }
-    .ft-icon {
-        width: 40px;
-        height: 40px;
-    }
-    .first-conteiner--title {
-        padding-left: 0;
-        margin-top: 100px;
+    .first-conteiner--title ul li {
+        font-size: 90px;
+        margin: 90px;
+        box-shadow: 0px 0px 10px #000;
+        background-color: #88888850;
     }
     .first-conteiner--title-link {
         font-size: 90px;
-        padding: 55px;
     }
-
-    
     .first-conteiner--title-link a:hover{
-        font-size: 90px;
+        font-size: 80px;
         margin: 20px auto;
         transition: 300ms linear;
     }
-    .txt1 {
-        font-size: 70px;
-    }
-    
     /*Second Conteiner*/
     .content-title {
         width: 100vw;
@@ -527,55 +413,124 @@ body {
     .second-conteiner--text-area {
         padding: 10px 10px;
         font-size: 30px;
-        line-height: 45px;
+        line-height: 150%;
     }
 
     /* Third Content slides*/
+    .content-title {
+        padding-top: 50px;
+    }
     .slider {
         width: 100%;
-        height: 80vh;
-    }
-    .slides {
-        height: 100%;
+        height: 524px;
     }
     .slide-title {
         height:12vh;
-        font-size: 40px;
         border-radius: 20px 20px 0px 0px;
         text-align: center;
-    }
-    .slide-title h1 {
-        padding-top: 10px;
-    }
-    .slide-title p {
-        padding: 6px;
     }
     .slide img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: center;
-    }
-    .slide-image img {
-        border-radius: 0px 0px 20px 20px;
     }
     .manual-navigation {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 30%;
     }
     .navigation-auto {
         width: 100%;
-        margin-top: 870px;
+        margin-top: 82%;
     }
     .contato-conteiner {
-        width: 50%;
+        width: 90%;
         height: 50%;
     }
-    #return-button{
-        width: 0;
-        height: 0;
+    .contato-conteiner--top {
+        height: 20%;
     }
-    .btn{
-        display: none;
+    .contato-conteiner--top p{
+        font-size: 30px;
     }
+    .button {
+        font-size: 25px;
+    }
+
+}
+
+/*celular*/
+
+@media (max-width: 767px){
+    
+    /*First Conteiner*/
+    .first-conteiner {
+        display: block;
+        background-size: 320%;
+    }   
+    .first-conteiner--icons {
+        flex-direction: row;
+        margin-top: 15px;
+        margin-left: 70%;
+        gap: 15px;
+    }
+    .ft-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .first-conteiner--title {
+        margin-top: 90px;
+    }
+    .first-conteiner--title ul li {
+        font-size: 38px;
+        margin: 60px;
+        box-shadow: 0px 0px 10px #000;
+        background-color: #88888850;
+    }
+    /*Second Conteiner*/
+    .content-title {
+        width: 100vw;
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .second-conteiner--text-area {
+        padding: 10px 10px;
+        font-size: 15px;
+        line-height: 150%;
+    }
+
+    /* Third Content slides*/
+    .content-title {
+        padding-top: 30px;
+    }
+    .slider {
+        width: 100%;
+        height: 524px;
+        margin-top: 10px;
+    }
+    .slide img {
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+    }
+    .manual-navigation {
+        margin-top: 20%;
+    }
+    .navigation-auto {
+        margin-top: 127%;
+    }
+    .contato-conteiner {
+        width: 90%;
+        height: 50%;
+    }
+    .contato-conteiner--top {
+        height: 20%;
+    }
+    .contato-conteiner--top p{
+        font-size: 30px;
+    }
+    .button {
+        font-size: 20px;
+    }
+
 }
